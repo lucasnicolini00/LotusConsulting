@@ -1,0 +1,119 @@
+---
+const COMPANY = 'Lotus Consulting International Limited';
+const LAWYER = 'Nilufer Ozder-Hartkoorn';
+const EMAIL = 'contact@lotusconsulting.example'; // update when known
+---
+
+<section id="home" class="relative overflow-hidden bg-neutral-950">
+  <div class="absolute inset-0 bg-linear-to-b from-neutral-900/30 via-neutral-950 to-black"></div>
+  <div class="relative">
+    <header class="container mx-auto flex items-center justify-between px-4 py-6">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="/favicon.svg" alt="Lotus logo" class="h-8 w-8" />
+        <span class="text-sm font-semibold tracking-wide text-white/90">{COMPANY}</span>
+      </a>
+      <nav class="hidden gap-8 text-sm text-white/80 md:flex">
+        <a href="#services" class="hover:text-white">Services</a>
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="ml-2 hidden rounded-md bg-lotus-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lotus-700 md:inline-flex">Book a consultation</a>
+        <!-- Mobile menu button -->
+        <button id="menu-button" aria-controls="menu-panel" aria-expanded="false" aria-label="Open menu" class="inline-flex items-center justify-center rounded-md p-2 text-white/90 hover:bg-white/10 md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+            <path fill-rule="evenodd" d="M3.75 5.25a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm0 6a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm.75 5.25a.75.75 0 0 0 0 1.5h15a.75.75 0 0 0 0-1.5h-15Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile sidebar menu -->
+    <div id="menu-overlay" class="fixed inset-0 z-40 bg-black/50 opacity-0 pointer-events-none transition duration-300 md:hidden"></div>
+    <aside id="menu-panel" role="dialog" aria-modal="true" class="fixed right-0 top-0 z-50 h-full w-80 max-w-[80%] translate-x-full border-l border-white/10 bg-neutral-950 p-6 transition duration-300 ease-in-out md:hidden">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-semibold tracking-wide text-white/90">{COMPANY}</span>
+        <button id="menu-close" aria-label="Close menu" class="rounded-md p-2 text-white/80 hover:bg-white/10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+            <path fill-rule="evenodd" d="M6.22 5.97a.75.75 0 0 1 1.06 0L12 10.69l4.72-4.72a.75.75 0 1 1 1.06 1.06L13.06 11.75l4.72 4.72a.75.75 0 1 1-1.06 1.06L12 12.81l-4.72 4.72a.75.75 0 1 1-1.06-1.06l4.72-4.72-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      <nav class="mt-8 flex flex-col gap-4 text-sm text-white/90">
+        <a href="#services" class="rounded-md px-2 py-2 hover:bg-white/10">Services</a>
+        <a href="#about" class="rounded-md px-2 py-2 hover:bg-white/10">About</a>
+        <a href="#contact" class="rounded-md px-2 py-2 hover:bg-white/10">Contact</a>
+        <a href="#contact" class="mt-4 inline-flex items-center justify-center rounded-md bg-lotus-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lotus-700">Book a consultation</a>
+      </nav>
+    </aside>
+
+    <div class="container mx-auto grid min-h-[70vh] items-center gap-10 px-4 py-16 md:grid-cols-2 md:min-h-[80vh] md:py-28 lg:min-h-screen">
+      <div class="max-w-xl">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          Commercial & Transaction Law
+        </h1>
+        <p class="mt-6 max-w-prose text-base leading-relaxed text-white/70 sm:text-lg">
+          Strategic, practical counsel for complex deals and cross-border operations. {LAWYER} provides clear, business-focused advice across negotiations, contracts, and regulatory considerations.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-lotus-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-lotus-700">
+            Book a consultation
+          </a>
+          <a href="#services" class="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg-white/10">
+            Explore services
+          </a>
+        </div>
+        <dl class="mt-10 grid grid-cols-2 gap-6 text-sm text-white/60 sm:max-w-md">
+          <div>
+            <dt class="font-medium text-white/80">Focus Areas</dt>
+            <dd class="mt-1">M&A, JV, due diligence, complex contracts</dd>
+          </div>
+          <div>
+            <dt class="font-medium text-white/80">Clients</dt>
+            <dd class="mt-1">Growth-stage to multinational companies</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="relative">
+        <div class="pointer-events-none absolute -inset-8 -z-10 rounded-3xl bg-linear-to-tr from-lotus-600/20 via-fuchsia-500/10 to-emerald-400/10 blur-3xl"></div>
+        <figure class="mx-auto mt-10 block w-full max-w-[520px] overflow-hidden rounded-2xl shadow-lg md:mt-0 md:max-w-[620px]">
+          <img src="/Nilufer-Ozder-Genel-Energy-825x550.jpg" alt="Portrait of Nilufer providing strategic transaction counsel" class="h-auto w-full object-cover" loading="lazy" width="825" height="550" />
+          <figcaption class="sr-only">Nilufer – Commercial & Transaction Lawyer</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('menu-button');
+  const panel = document.getElementById('menu-panel');
+  const overlay = document.getElementById('menu-overlay');
+  const closeBtn = document.getElementById('menu-close');
+
+  function openMenu() {
+    if (!panel || !overlay) return;
+    panel.classList.remove('translate-x-full');
+    overlay.classList.remove('opacity-0','pointer-events-none');
+    overlay.classList.add('opacity-100');
+    btn?.setAttribute('aria-expanded','true');
+    document.body.classList.add('overflow-hidden');
+    panel.focus?.();
+  }
+  function closeMenu() {
+    if (!panel || !overlay) return;
+    panel.classList.add('translate-x-full');
+    overlay.classList.add('opacity-0','pointer-events-none');
+    overlay.classList.remove('opacity-100');
+    btn?.setAttribute('aria-expanded','false');
+    document.body.classList.remove('overflow-hidden');
+    btn?.focus?.();
+  }
+
+  btn?.addEventListener('click', openMenu);
+  closeBtn?.addEventListener('click', closeMenu);
+  overlay?.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>

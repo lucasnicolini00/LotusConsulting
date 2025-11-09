@@ -1,0 +1,77 @@
+---
+const services = [
+  {
+    title: 'Transactional Structuring',
+    description: 'Design efficient and compliant structures for cross-border transactions, joint ventures, and strategic alliances.'
+  },
+  {
+    title: 'Mergers & Acquisitions',
+    description: 'End-to-end support across due diligence, negotiation, purchase agreements, and closing documentation.'
+  },
+  {
+    title: 'Commercial Contracts',
+    description: 'Draft and negotiate complex, high-value agreements with clear risk allocation and enforceable protections.'
+  },
+  {
+    title: 'Regulatory & Compliance',
+    description: 'Assess regulatory exposure and implement pragmatic frameworks aligned with operational realities.'
+  },
+  {
+    title: 'Risk Assessment',
+    description: 'Identify structural, contractual, and jurisdictional risks early to protect strategic value.'
+  },
+  {
+    title: 'Deal Negotiation',
+    description: 'Strategic support to reach durable, balanced outcomes while preserving relationship value.'
+  }
+];
+---
+<section id="services" class="bg-neutral-950 py-20 sm:py-28">
+  <div class="container mx-auto px-4">
+    <!-- Mobile image -->
+    <figure class="mb-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm md:hidden">
+      <img
+        src="/Nilufer-Ozder-Genel-Energy-600x400.jpg"
+        alt="Nilufer collaborating on commercial matters"
+        class="h-48 w-full object-cover opacity-95"
+        loading="lazy"
+        width="600"
+        height="400"
+      />
+      <figcaption class="sr-only">Advising on commercial and transaction matters</figcaption>
+    </figure>
+
+    <div class="grid gap-10 md:grid-cols-3 lg:gap-14">
+      <!-- Left: heading + cards -->
+      <div class="md:col-span-2">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Services</h2>
+          <p class="mt-4 text-white/70">Tailored legal advisory across the lifecycle of strategic transactions and commercial operations.</p>
+        </div>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+          {services.map(s => (
+            <div class="group rounded-xl border border-white/10 bg-white/3 p-6 backdrop-blur transition hover:border-white/20 hover:bg-white/6">
+              <h3 class="text-lg font-medium text-white group-hover:text-lotus-400">{s.title}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/70">{s.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <aside class="hidden md:block">
+        <figure class="sticky top-24 overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm">
+          <img
+            src="/Nilufer-Ozder-Genel-Energy-600x400.jpg"
+            alt="Nilufer collaborating on commercial matters"
+            class="h-full w-full object-cover opacity-95"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+          <figcaption class="sr-only">Advising on commercial and transaction matters</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </div>
+  </section>

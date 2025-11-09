@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+const company = 'Lotus Consulting International Limited';
+const lawyer = 'Nilufer';
+const pageTitle = `${company} — Commercial & Transaction Law`;
+const description = `${lawyer} provides strategic legal counsel for complex commercial transactions, including M&A, cross-border structuring, and high-value contracts.`;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: company,
+	url: canonical,
+	logo: new URL('/favicon.svg', Astro.site).toString(),
+	founder: {
+		'@type': 'Person',
+		name: 'Nilufer',
+		jobTitle: 'Commercial & Transaction Lawyer',
+		knowsAbout: [
+			'Cross-border transactions',
+			'Commercial contracts',
+			'Mergers & Acquisitions',
+			'Regulatory compliance',
+			'Oil & Gas industry',
+			'Infrastructure',
+			'Finance'
+		],
+		hasCredential: [
+			{ '@type': 'EducationalOccupationalCredential', credentialCategory: 'Professional Qualification', name: 'UK Solicitor' },
+			{ '@type': 'EducationalOccupationalCredential', credentialCategory: 'Professional Qualification', name: 'TR Advocate' },
+			{ '@type': 'EducationalOccupationalCredential', credentialCategory: 'Degree', name: 'MSc in Business' }
+		],
+		address: { '@type': 'PostalAddress', addressCountry: 'GB' },
+		image: new URL('/favicon.svg', Astro.site).toString()
+	},
+	department: {
+		'@type': 'LegalService',
+		name: 'Commercial & Transaction Law',
+		areaServed: ['GB', 'EU', 'Middle East'],
+		serviceType: ['Mergers & Acquisitions', 'Commercial Contracts', 'Regulatory Compliance', 'Deal Negotiation']
+	}
+};
+---
+
+<Layout title={pageTitle} description={description} canonical={canonical}>
+	<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+	<Hero />
+	<Services />
+	<About />
+	<Contact />
+	<Footer />
+</Layout>
