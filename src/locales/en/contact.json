@@ -1,0 +1,8 @@
+{
+  "title": "Let's discuss your transaction",
+  "subtitle": "Share your objectives, timelines, and jurisdictions involved. We'll suggest a pragmatic approach and the next steps to move forward.",
+  "cta": {
+    "email": "Email {{email}}",
+    "viewServices": "View services"
+  }
+}

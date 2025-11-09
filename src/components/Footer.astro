@@ -1,14 +1,18 @@
 ---
-const COMPANY = 'Lotus Consulting International Limited';
+import { getTranslations } from '../i18n/utils';
+
+const currentLocale = Astro.currentLocale || 'en';
+const t = await getTranslations(currentLocale);
+
 const YEAR = new Date().getFullYear();
 ---
 <footer class="bg-neutral-950 py-10">
   <div class="container mx-auto flex flex-col items-center justify-between gap-4 px-4 text-center text-sm text-white/60 sm:flex-row">
-    <p>© {YEAR} {COMPANY}. All rights reserved.</p>
+    <p>{t.common.footer.copyright.replace('{{year}}', YEAR.toString())}</p>
     <nav class="flex items-center gap-6">
-      <a href="#services" class="hover:text-white">Services</a>
-      <a href="#about" class="hover:text-white">About</a>
-      <a href="#contact" class="hover:text-white">Contact</a>
+      <a href="#services" class="hover:text-white">{t.common.nav.services}</a>
+      <a href="#about" class="hover:text-white">{t.common.nav.about}</a>
+      <a href="#contact" class="hover:text-white">{t.common.nav.contact}</a>
     </nav>
   </div>
 </footer>

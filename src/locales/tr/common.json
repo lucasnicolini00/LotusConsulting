@@ -1,0 +1,17 @@
+{
+  "site": {
+    "title": "Lotus Consulting International Limited — Ticari ve İşlem Hukuku",
+    "description": "Karmaşık ticari işlemler için stratejik hukuk danışmanlığı. Nilufer liderliğinde, sınır ötesi danışmanlık sağlayan deneyimli ticari ve işlem avukatı.",
+    "company": "Lotus Consulting International Limited",
+    "lawyer": "Nilufer"
+  },
+  "nav": {
+    "services": "Hizmetler",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "bookConsultation": "Randevu al"
+  },
+  "footer": {
+    "copyright": "© {{year}} Lotus Consulting International Limited. Tüm hakları saklıdır."
+  }
+}

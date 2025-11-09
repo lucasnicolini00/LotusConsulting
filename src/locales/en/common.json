@@ -1,0 +1,17 @@
+{
+  "site": {
+    "title": "Lotus Consulting International Limited — Commercial & Transaction Law",
+    "description": "Strategic legal counsel for complex commercial transactions. Led by Nilufer, an experienced commercial and transaction lawyer advising businesses across borders.",
+    "company": "Lotus Consulting International Limited",
+    "lawyer": "Nilufer"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "bookConsultation": "Book a consultation"
+  },
+  "footer": {
+    "copyright": "© {{year}} Lotus Consulting International Limited. All rights reserved."
+  }
+}

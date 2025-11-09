@@ -1,0 +1,30 @@
+{
+  "title": "Services",
+  "subtitle": "Tailored legal advisory across the lifecycle of strategic transactions and commercial operations.",
+  "list": [
+    {
+      "title": "Transactional Structuring",
+      "description": "Design efficient and compliant structures for cross-border transactions, joint ventures, and strategic alliances."
+    },
+    {
+      "title": "Mergers & Acquisitions",
+      "description": "End-to-end support across due diligence, negotiation, purchase agreements, and closing documentation."
+    },
+    {
+      "title": "Commercial Contracts",
+      "description": "Draft and negotiate complex, high-value agreements with clear risk allocation and enforceable protections."
+    },
+    {
+      "title": "Regulatory & Compliance",
+      "description": "Assess regulatory exposure and implement pragmatic frameworks aligned with operational realities."
+    },
+    {
+      "title": "Risk Assessment",
+      "description": "Identify structural, contractual, and jurisdictional risks early to protect strategic value."
+    },
+    {
+      "title": "Deal Negotiation",
+      "description": "Strategic support to reach durable, balanced outcomes while preserving relationship value."
+    }
+  ]
+}

@@ -1,30 +1,10 @@
 ---
-const services = [
-  {
-    title: 'Transactional Structuring',
-    description: 'Design efficient and compliant structures for cross-border transactions, joint ventures, and strategic alliances.'
-  },
-  {
-    title: 'Mergers & Acquisitions',
-    description: 'End-to-end support across due diligence, negotiation, purchase agreements, and closing documentation.'
-  },
-  {
-    title: 'Commercial Contracts',
-    description: 'Draft and negotiate complex, high-value agreements with clear risk allocation and enforceable protections.'
-  },
-  {
-    title: 'Regulatory & Compliance',
-    description: 'Assess regulatory exposure and implement pragmatic frameworks aligned with operational realities.'
-  },
-  {
-    title: 'Risk Assessment',
-    description: 'Identify structural, contractual, and jurisdictional risks early to protect strategic value.'
-  },
-  {
-    title: 'Deal Negotiation',
-    description: 'Strategic support to reach durable, balanced outcomes while preserving relationship value.'
-  }
-];
+import { getTranslations } from '../i18n/utils';
+
+const currentLocale = Astro.currentLocale || 'en';
+const t = await getTranslations(currentLocale);
+
+const services = t.services.list;
 ---
 <section id="services" class="bg-neutral-950 py-20 sm:py-28">
   <div class="container mx-auto px-4">
@@ -45,11 +25,11 @@ const services = [
       <!-- Left: heading + cards -->
       <div class="md:col-span-2">
         <div class="max-w-2xl">
-          <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Services</h2>
-          <p class="mt-4 text-white/70">Tailored legal advisory across the lifecycle of strategic transactions and commercial operations.</p>
+          <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">{t.services.title}</h2>
+          <p class="mt-4 text-white/70">{t.services.subtitle}</p>
         </div>
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
-          {services.map(s => (
+          {services.map((s: any) => (
             <div class="group rounded-xl border border-white/10 bg-white/3 p-6 backdrop-blur transition hover:border-white/20 hover:bg-white/6">
               <h3 class="text-lg font-medium text-white group-hover:text-lotus-400">{s.title}</h3>
               <p class="mt-2 text-sm leading-relaxed text-white/70">{s.description}</p>

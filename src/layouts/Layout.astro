@@ -10,7 +10,7 @@ const {
 	title = 'Lotus Consulting International Limited — Commercial & Transaction Law',
 	description = 'Strategic legal counsel for complex commercial transactions. Led by Nilufer, an experienced commercial and transaction lawyer advising businesses across borders.',
 	canonical,
-	ogImage = '/favicon.svg'
+	ogImage = '/favicon.ico'
 } = Astro.props as Props;
 
 import '../styles/global.css' 
@@ -22,7 +22,9 @@ import '../styles/global.css'
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 		<title>{title}</title>
 		<meta name="description" content={description} />

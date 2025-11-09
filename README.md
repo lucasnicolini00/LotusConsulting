@@ -49,19 +49,6 @@ npm run build   # outputs to ./dist
 npm run preview # preview production build
 ```
 
-## Tailwind v4 Notes
-
-Tailwind v4 is configured using the new PostCSS plugin:
-
-```js
-// postcss.config.cjs
-const tailwind = require("@tailwindcss/postcss");
-module.exports = { plugins: [tailwind(), require("autoprefixer")()] };
-```
-
-- Custom colors for the brand live in `tailwind.config.mjs` under `theme.extend.colors.lotus` and are used like `bg-lotus-600`.
-- Utility classes are applied directly in components; no `@apply` is used in `src/styles/tailwind.css` to keep v4 stable.
-
 ## SEO
 
 - Set your real production URL in `astro.config.mjs` as `site`.

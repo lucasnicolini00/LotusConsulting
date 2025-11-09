@@ -1,0 +1,41 @@
+{
+  "title": "About Nilufer",
+  "bio": "I am a UK‑qualified Solicitor and TR‑qualified Advocate with a Master's degree in Business. I combine deep legal expertise with commercial acumen to deliver strategic advice and practical solutions on complex legal and compliance matters. Over 20 years in practice, I have managed and advised on high‑profile projects and transactions across multiple regions and industries, including energy, infrastructure, and finance.",
+  "expertise": [
+    "Cross‑border structuring, negotiations, and regulatory alignment",
+    "High‑value commercial contracts with clear risk allocation",
+    "M&A due diligence and end‑to‑end transaction support",
+    "Energy sector expertise; experience with London‑listed operators",
+    "Cross‑cultural bridge: European & Eastern business environments",
+    "Leadership & teaching: oil & gas law at the Turkish Bar Association"
+  ],
+  "credentials": {
+    "title": "Credentials",
+    "list": ["UK Solicitor", "TR Advocate", "MSc in Business"]
+  },
+  "highlights": {
+    "title": "Highlights",
+    "industries": {
+      "title": "Industries",
+      "list": ["Energy (Oil & Gas)", "Infrastructure", "Finance"]
+    },
+    "regions": {
+      "title": "Regions Served",
+      "list": ["UK & Europe", "Middle East", "Cross‑border engagements"]
+    }
+  },
+  "approach": {
+    "title": "Approach",
+    "list": [
+      "Clarity first: align legal strategy with business outcomes",
+      "Bridge cultures: adapt frameworks across jurisdictions",
+      "Risk‑forward: identify issues early; negotiate durable positions",
+      "Collaborative: transparent, research‑led problem solving"
+    ]
+  },
+  "hobbies": "Outside work: paragliding, windsurfing, skiing, and horseback riding—disciplines that, like complex transactions, reward preparation, judgment, and calm decision‑making.",
+  "testimonial": {
+    "quote": "I admire very much the unique blend of legal, commercial, and cultural skills she displays when dealing with the knotty issues that can arise in the oil sector in developing jurisdictions, making her an asset to the business and a pleasure to work with.",
+    "author": "— Paula Hodges KC, Partner & Head of Global Arbitration, Herbert Smith Freehills LLP"
+  }
+}

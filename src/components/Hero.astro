@@ -1,7 +1,12 @@
 ---
-const COMPANY = 'Lotus Consulting International Limited';
-const LAWYER = 'Nilufer Ozder-Hartkoorn';
-const EMAIL = 'contact@lotusconsulting.example'; // update when known
+import { getTranslations, getLocalizedPath } from '../i18n/utils';
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+
+const currentLocale = Astro.currentLocale || 'en';
+const t = await getTranslations(currentLocale);
+
+const COMPANY = t.common.site.company;
+const LAWYER = t.common.site.lawyer;
 ---
 
 <section id="home" class="relative overflow-hidden bg-neutral-950">
@@ -9,16 +14,17 @@ const EMAIL = 'contact@lotusconsulting.example'; // update when known
   <div class="relative">
     <header class="container mx-auto flex items-center justify-between px-4 py-6">
       <a href="#home" class="flex items-center gap-3">
-        <img src="/favicon.svg" alt="Lotus logo" class="h-8 w-8" />
+        <img src="/favicon.ico" alt="Lotus logo" class="h-8 w-8" />
         <span class="text-sm font-semibold tracking-wide text-white/90">{COMPANY}</span>
       </a>
       <nav class="hidden gap-8 text-sm text-white/80 md:flex">
-        <a href="#services" class="hover:text-white">Services</a>
-        <a href="#about" class="hover:text-white">About</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="#services" class="hover:text-white">{t.common.nav.services}</a>
+        <a href="#about" class="hover:text-white">{t.common.nav.about}</a>
+        <a href="#contact" class="hover:text-white">{t.common.nav.contact}</a>
       </nav>
       <div class="flex items-center gap-2">
-        <a href="#contact" class="ml-2 hidden rounded-md bg-lotus-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lotus-700 md:inline-flex">Book a consultation</a>
+        <LanguageSwitcher />
+        <a href="#contact" class="ml-2 hidden rounded-md bg-lotus-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lotus-700 md:inline-flex">{t.common.nav.bookConsultation}</a>
         <!-- Mobile menu button -->
         <button id="menu-button" aria-controls="menu-panel" aria-expanded="false" aria-label="Open menu" class="inline-flex items-center justify-center rounded-md p-2 text-white/90 hover:bg-white/10 md:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
@@ -40,37 +46,37 @@ const EMAIL = 'contact@lotusconsulting.example'; // update when known
         </button>
       </div>
       <nav class="mt-8 flex flex-col gap-4 text-sm text-white/90">
-        <a href="#services" class="rounded-md px-2 py-2 hover:bg-white/10">Services</a>
-        <a href="#about" class="rounded-md px-2 py-2 hover:bg-white/10">About</a>
-        <a href="#contact" class="rounded-md px-2 py-2 hover:bg-white/10">Contact</a>
-        <a href="#contact" class="mt-4 inline-flex items-center justify-center rounded-md bg-lotus-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lotus-700">Book a consultation</a>
+        <a href="#services" class="rounded-md px-2 py-2 hover:bg-white/10">{t.common.nav.services}</a>
+        <a href="#about" class="rounded-md px-2 py-2 hover:bg-white/10">{t.common.nav.about}</a>
+        <a href="#contact" class="rounded-md px-2 py-2 hover:bg-white/10">{t.common.nav.contact}</a>
+        <a href="#contact" class="mt-4 inline-flex items-center justify-center rounded-md bg-lotus-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-lotus-700">{t.common.nav.bookConsultation}</a>
       </nav>
     </aside>
 
     <div class="container mx-auto grid min-h-[70vh] items-center gap-10 px-4 py-16 md:grid-cols-2 md:min-h-[80vh] md:py-28 lg:min-h-screen">
       <div class="max-w-xl">
         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-          Commercial & Transaction Law
+          {t.hero.heading}
         </h1>
         <p class="mt-6 max-w-prose text-base leading-relaxed text-white/70 sm:text-lg">
-          Strategic, practical counsel for complex deals and cross-border operations. {LAWYER} provides clear, business-focused advice across negotiations, contracts, and regulatory considerations.
+          {t.hero.subheading}
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-lotus-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-lotus-700">
-            Book a consultation
+            {t.hero.cta.primary}
           </a>
           <a href="#services" class="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg-white/10">
-            Explore services
+            {t.hero.cta.secondary}
           </a>
         </div>
         <dl class="mt-10 grid grid-cols-2 gap-6 text-sm text-white/60 sm:max-w-md">
           <div>
-            <dt class="font-medium text-white/80">Focus Areas</dt>
-            <dd class="mt-1">M&A, JV, due diligence, complex contracts</dd>
+            <dt class="font-medium text-white/80">{t.hero.highlights.focusAreas.title}</dt>
+            <dd class="mt-1">{t.hero.highlights.focusAreas.description}</dd>
           </div>
           <div>
-            <dt class="font-medium text-white/80">Clients</dt>
-            <dd class="mt-1">Growth-stage to multinational companies</dd>
+            <dt class="font-medium text-white/80">{t.hero.highlights.clients.title}</dt>
+            <dd class="mt-1">{t.hero.highlights.clients.description}</dd>
           </div>
         </dl>
       </div>

@@ -1,0 +1,41 @@
+{
+  "title": "Nilufer Hakkında",
+  "bio": "İşletme alanında yüksek lisans derecesine sahip İngiltere‑nitelikli Avukat ve TR‑nitelikli Avukatım. Karmaşık hukuki ve uyum konularında stratejik tavsiyeler ve pratik çözümler sunmak için derin hukuki uzmanlığı ticari açıdan birleştiriyorum. 20 yılı aşkın deneyimimle, enerji, altyapı ve finans dahil olmak üzere birçok bölge ve sektörde yüksek profilli projeleri ve işlemleri yönettim ve danışmanlık verdim.",
+  "expertise": [
+    "Sınır ötesi yapılandırma, müzakereler ve düzenleyici uyum",
+    "Net risk dağılımı ile yüksek değerli ticari sözleşmeler",
+    "Birleşme ve devralma durum tespiti ve uçtan uca işlem desteği",
+    "Enerji sektörü uzmanlığı; Londra'da işlem gören operatörlerle deneyim",
+    "Kültürler arası köprü: Avrupa ve Doğu iş ortamları",
+    "Liderlik ve öğretim: Türk Barolar Birliği'nde petrol ve gaz hukuku"
+  ],
+  "credentials": {
+    "title": "Kimlik Bilgileri",
+    "list": ["İngiltere Avukatı", "TR Avukatı", "İşletme Yüksek Lisansı"]
+  },
+  "highlights": {
+    "title": "Öne Çıkanlar",
+    "industries": {
+      "title": "Sektörler",
+      "list": ["Enerji (Petrol ve Gaz)", "Altyapı", "Finans"]
+    },
+    "regions": {
+      "title": "Hizmet Verilen Bölgeler",
+      "list": ["İngiltere ve Avrupa", "Orta Doğu", "Sınır ötesi katılımlar"]
+    }
+  },
+  "approach": {
+    "title": "Yaklaşım",
+    "list": [
+      "Önce netlik: hukuki stratejiyi iş sonuçlarıyla uyumlu hale getirin",
+      "Kültürleri köprüleyin: çerçeveleri yargı alanları arasında uyarlayın",
+      "Risk odaklı: sorunları erken belirleyin; kalıcı pozisyonlar müzakere edin",
+      "İşbirlikçi: şeffaf, araştırmaya dayalı problem çözme"
+    ]
+  },
+  "hobbies": "İş dışında: yamaç paraşütü, rüzgar sörfü, kayak ve binicilik—karmaşık işlemler gibi hazırlık, yargı ve sakin karar vermeyi ödüllendiren disiplinler.",
+  "testimonial": {
+    "quote": "Gelişmekte olan yargı alanlarında petrol sektöründe ortaya çıkabilecek çetrefilli konularla uğraşırken sergilediği hukuki, ticari ve kültürel becerilerin benzersiz karışımını çok takdir ediyorum; bu onu işletme için bir değer ve birlikte çalışmak için bir zevk haline getiriyor.",
+    "author": "— Paula Hodges KC, Ortak ve Küresel Tahkim Başkanı, Herbert Smith Freehills LLP"
+  }
+}

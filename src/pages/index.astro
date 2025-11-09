@@ -17,7 +17,7 @@ const jsonLd = {
 	'@type': 'Organization',
 	name: company,
 	url: canonical,
-	logo: new URL('/favicon.svg', Astro.site).toString(),
+	logo: new URL('/favicon.ico', Astro.site).toString(),
 	founder: {
 		'@type': 'Person',
 		name: 'Nilufer',
@@ -37,7 +37,7 @@ const jsonLd = {
 			{ '@type': 'EducationalOccupationalCredential', credentialCategory: 'Degree', name: 'MSc in Business' }
 		],
 		address: { '@type': 'PostalAddress', addressCountry: 'GB' },
-		image: new URL('/favicon.svg', Astro.site).toString()
+		image: new URL('/favicon.ico', Astro.site).toString()
 	},
 	department: {
 		'@type': 'LegalService',

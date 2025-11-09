@@ -1,0 +1,17 @@
+{
+  "site": {
+    "title": "Lotus Consulting International Limited — 商业与交易法",
+    "description": "为复杂商业交易提供战略法律咨询。由经验丰富的商业和交易律师Nilufer领导，为跨境企业提供咨询服务。",
+    "company": "Lotus Consulting International Limited",
+    "lawyer": "Nilufer"
+  },
+  "nav": {
+    "services": "服务",
+    "about": "关于",
+    "contact": "联系",
+    "bookConsultation": "预约咨询"
+  },
+  "footer": {
+    "copyright": "© {{year}} Lotus Consulting International Limited. 保留所有权利。"
+  }
+}

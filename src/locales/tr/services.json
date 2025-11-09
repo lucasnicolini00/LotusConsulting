@@ -1,0 +1,30 @@
+{
+  "title": "Hizmetler",
+  "subtitle": "Stratejik işlemlerin ve ticari operasyonların yaşam döngüsü boyunca özel hukuk danışmanlığı.",
+  "list": [
+    {
+      "title": "İşlem Yapılandırması",
+      "description": "Sınır ötesi işlemler, ortak girişimler ve stratejik ittifaklar için verimli ve uyumlu yapılar tasarlayın."
+    },
+    {
+      "title": "Birleşme ve Devralmalar",
+      "description": "Durum tespiti, müzakere, satın alma sözleşmeleri ve kapanış belgeleri boyunca uçtan uca destek."
+    },
+    {
+      "title": "Ticari Sözleşmeler",
+      "description": "Net risk dağılımı ve uygulanabilir korumalar ile karmaşık, yüksek değerli anlaşmaları hazırlayın ve müzakere edin."
+    },
+    {
+      "title": "Düzenleme ve Uyumluluk",
+      "description": "Düzenleyici riskleri değerlendirin ve operasyonel gerçeklere uygun pragmatik çerçeveler uygulayın."
+    },
+    {
+      "title": "Risk Değerlendirmesi",
+      "description": "Stratejik değeri korumak için yapısal, sözleşmesel ve yargı risklerini erken belirleyin."
+    },
+    {
+      "title": "Anlaşma Müzakeresi",
+      "description": "İlişki değerini koruyarak kalıcı, dengeli sonuçlara ulaşmak için stratejik destek."
+    }
+  ]
+}
