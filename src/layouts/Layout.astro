@@ -13,11 +13,21 @@ const {
 	ogImage = '/favicon.ico'
 } = Astro.props as Props;
 
+const currentLocale = Astro.currentLocale || 'en';
+const site = Astro.site?.toString() || 'https://www.lotusconsulting.example';
+
+// Generate hreflang alternate URLs
+const alternateUrls = {
+	en: site,
+	tr: `${site}tr/`,
+	zh: `${site}zh/`
+};
+
 import '../styles/global.css' 
 ---
 
 <!doctype html>
-<html lang="en" class="dark">
+<html lang={currentLocale} class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,11 +40,18 @@ import '../styles/global.css'
 		<meta name="description" content={description} />
 		{canonical && <link rel="canonical" href={canonical} />}
 
+		<!-- Alternate language versions (hreflang) -->
+		<link rel="alternate" hreflang="en" href={alternateUrls.en} />
+		<link rel="alternate" hreflang="tr" href={alternateUrls.tr} />
+		<link rel="alternate" hreflang="zh" href={alternateUrls.zh} />
+		<link rel="alternate" hreflang="x-default" href={alternateUrls.en} />
+
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImage} />
+		<meta property="og:locale" content={currentLocale === 'en' ? 'en_US' : currentLocale === 'tr' ? 'tr_TR' : 'zh_CN'} />
 		{canonical && <meta property="og:url" content={canonical} />}
 
 		<!-- Twitter -->

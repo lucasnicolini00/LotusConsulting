@@ -9,7 +9,18 @@ const site = "https://www.lotusconsulting.example";
 
 export default defineConfig({
   site,
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      i18n: {
+        defaultLocale: "en",
+        locales: {
+          en: "en-US",
+          tr: "tr-TR",
+          zh: "zh-CN",
+        },
+      },
+    }),
+  ],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "tr", "zh"],
